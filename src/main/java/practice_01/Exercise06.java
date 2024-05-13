@@ -16,25 +16,25 @@ public class Exercise06 {
 
 		 */
 
-        Scanner input =new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         System.out.println("lütfen boyunuzu metre cinsinden giriniz.");
         double height = input.nextDouble();
 
         System.out.println("Lütfen kilonuzu kilogram cinsinden giriniz");
-        short weight= input.nextShort();
+        short weight = input.nextShort();
 
-        double BMI= weight/(height*height);
+        double BMI = weight / (height * height);
 
-        if (BMI<=20){
+        if (BMI <= 20) {
             System.out.println("Oldukça zayıfsınız.");
-        } else if (20<BMI&&BMI<=25) {
+        } else if (20 < BMI && BMI <= 25) {
             System.out.println("Normal sınırdasınız.");
 
-        } else if (25<BMI&&BMI<=30) {
+        } else if (25 < BMI && BMI <= 30) {
             System.out.println("Şişman katagorisindesiniz.");
 
-        }else {
+        } else {
             System.out.println("Obez grubundasınız");
         }
 
