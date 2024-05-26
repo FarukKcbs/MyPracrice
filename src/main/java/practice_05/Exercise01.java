@@ -83,18 +83,18 @@ public class Exercise01 {
         String mukemmelSayilar1="";
 
         for (int i = 2; i <p ; i++) {
-            if (asalMi(i)&&asalMi(Math.pow(i,2)-1)){
+            if (asalMi(i)){
+                int ikinciCarpan = (int) (Math.pow(2,i)-1);
+                if (asalMi(ikinciCarpan)){
 
-                double first=Math.pow(2,i-1);
-                double last=Math.pow(i,2)-1;
-                int mukemmelSayi=(int) (first*last);
+                        int mukemmelSayi= (int) Math.pow(2,(i-1))*ikinciCarpan;
 
+                        if (mukemmelSayi>=p){
+                             break;
+                        }
+                        mukemmelSayilar1+=mukemmelSayi+" - ";
 
-                if (mukemmelSayi>=p){
-                    break;
-                }
-                mukemmelSayilar1+=mukemmelSayi+" - ";
-
+               }
             }
 
         }
